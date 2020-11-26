@@ -1,6 +1,4 @@
-class Task
-
-    def Task(description, duration)
+class Task():
+    def __init__(self, description, duration):
         self.description = description
         self.duration = duration
-
