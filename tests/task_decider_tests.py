@@ -1,7 +1,7 @@
 import unittest
 
 from src.task import Task
-# from src.task_decider import *
+from task_decider import *
 
 class TestTaskDecider(unittest.TestCase):
 
@@ -15,4 +15,7 @@ class TestTaskDecider(unittest.TestCase):
 
     def test_task_has_duration(self):
         self.assertEqual(10, self.wash_dishes.duration)
+
+    def test_gets_preferred_option_returns_wash_dishes(self):
+        self.assertEqual("Wash Dishes", self.get_preferred_option.task_1)
     

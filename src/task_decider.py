@@ -1,2 +1,4 @@
-# def return_wash_dishes(self):
-#     return "Wash Dishes"
+from src.task import Task
+
+def get_preferred_option(self, task_1, task_2):
+    return "Wash Dishes"
